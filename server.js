@@ -48,7 +48,7 @@ app.get('/api/items', async (req, res) => {
 });
 // ✅ Root Route
 app.get('/', (req, res) => {
-  res.status(200).send('Backend is running successfully Taimoor');
+  res.status(200).send('ECS Backend is running successfully');
 });
 // ✅ Health Route
 app.get('/health', (req, res) => {

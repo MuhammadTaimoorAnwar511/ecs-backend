@@ -54,6 +54,9 @@ app.get('/', (req, res) => {
 app.get('/health', (req, res) => {
   res.status(200).send('OK');
 });
+app.get('/mongouri', (req, res) => {
+  res.status(200).send(`MongoDB URI: ${process.env.MONGODB_URI}`);
+});
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port ${process.env.PORT}`);
 });

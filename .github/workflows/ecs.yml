@@ -52,7 +52,7 @@ jobs:
       run: |
         # Copy .env into backend folder so Docker build can use it
         cp .env .env
-        # cp .env .env
+
         # Build a docker container and
         # push it to ECR so that it can
         # be deployed to ECS.
